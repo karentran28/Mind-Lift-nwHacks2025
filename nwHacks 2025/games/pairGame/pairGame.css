@@ -1,0 +1,23 @@
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.selectable-image {
+    width: 100px;
+    height: auto;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+.selectable-image:hover {
+    transform: scale(1.05);
+}
+
+.selected {
+    border-color: #4CAF50; /* Highlight color (green) */
+}
