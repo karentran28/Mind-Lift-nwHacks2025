@@ -10,11 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 if (selectedImages.length < 2) {
                     image.classList.add('selected');
+                    console.log("pushed")
                     selectedImages.push(image);
                     if (selectedImages.length == 2) {
                         image1 = selectedImages.pop();
                         image2 = selectedImages.pop();
-                        
+                        if (image1.src === image2.src) {
+                            console.log("correct")
+                        }
                     }
                 }
             }
