@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffff;
+    position: absolute;
+    width: 100%;
+    flex-direction: column; /* Stack the logo and text vertically */
+}
+
+#logo2 {
+    width: 50px 
+}
+
+#logo {
+    width: 200px; 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 1s ease, visibility 1s ease; 
+    margin-bottom: 20px; /* Add gap between the logo and text */
+}
+
+#logo-text {
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#logo.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#logo-text.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#home-page {
+    text-align: center;
+    padding: 20px;
+    display: none; /* Hidden initially */
+}
+
+.hidden {
+    display: none;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between rows */
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px; /* Limit the overall container width */
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 0px; /* Consistent space between cards */
+    align-items: start; /* Align items at the top */
+    justify-items: center; /* Ensure cards are centered within their grid cells */
+  }
+  
+  .row-header {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-bottom: 0px; /* Space between the header and the cards */
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #616161;
+  }
+
+.card1 {
+    width: 250px;
+    height: 300px;
+    background-color: #e33c82;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2 {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: #4964fe;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden; /* Ensures the image is clipped to the card's boundaries */
+}
+
+.card5 {
+    width: 250px;
+    height: 300px;
+    background-color: #ec4541;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card4 {
+    width: 250px;
+    height: 300px;
+    background-color: #0aa587;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card3 {
+    width: 250px;
+    height: 300px;
+    background-color: #ff9e2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card6 {
+    width: 250px;
+    height: 300px;
+    background-color: #0c2581;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card1 img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #ff99c3;
+}
+
+.card2 img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #8498ff;
+}
+
+.card5 img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #ff7169;
+}
+.card4 img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #22ecc4;
+}
+
+.card3 img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #fabe79;
+}
+
+.card6 img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #2348cd;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card1-info {
+    background-color: #e33c82;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.card2-info {
+    background-color: #4964fe;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.card5-info {
+    background-color: #ec4541;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.card4-info {
+    background-color: #0aa587;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.card3-info {
+    background-color: #ff9e2c;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.card6-info {
+    background-color: #0c2581;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+.card1-info h2 {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    background-color: #e33c82;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.card1-info p {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #e33c82;
+    font-size: 14px;
+    color: white;
+    
+}
+
+
+.card2-info h2 {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    background-color: #4964fe;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card2-info p {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #4964fe;
+    font-size: 14px;
+    color: white;
+}
+
+.card5-info h2 {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    background-color: #ec4541;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card5-info p {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #ec4541;
+    font-size: 14px;
+    color: white;
+}
+
+.card4-info h2 {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    background-color: #0aa587;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card4-info p {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #0aa587;
+    font-size: 14px;
+    color: white;
+}
+
+.card3-info h2 {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    background-color: #ff9e2c;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.card3-info p {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #ff9e2c;
+    font-size: 14px;
+    color: white;
+    
+}
+
+.card6-info h2 {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    background-color: #0c2581;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.card6-info p {
+    font-family:system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #0c2581;
+    font-size: 14px;
+    color: white;
+    
+}
+
+
+.card1:active, .card2:active, .card3:active {
+    transform: scale(0.98);
+}
+
+
+
+/* General H1 Styling */
+h1 {
+    text-align: left;
+    font-size: 50px;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* Individual Span Styling */
+.highlight-primary {
+    background: linear-gradient(90deg, #e33c82, #a60045, #e33c82);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.highlight-secondary {
+    background: linear-gradient(90deg, #4964fe, #000f59, #4964fe); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.highlight-accent {
+    color: black; /* Teal */
+}
+
+h2 {
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+}
+

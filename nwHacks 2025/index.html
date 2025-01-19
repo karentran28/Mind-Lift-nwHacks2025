@@ -3,20 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Website</title>
+  <title>Mind Lift</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-  <header>
-    <h1>Mind Lift</h1>
-    <nav>
-      <ul>
-        <li><a href="games/pairGame/pairGame.html">pairGame</a></li>
-        <li><a href="games/tracing/tracing.html">tracing</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Splash Screen Section -->
+  <div id="splash-screen">
+    <img src="assets/logo.png" alt="Logo" id="logo">
+    <h1 id="logo-text">Mind Lift</h1>
+  </div>
+
+  <!-- Home Page Section (Hidden Initially) -->
+  <div id="home-page" class="hidden">
+    <img src="assets/logo.png" alt="Logo" id="logo2">
+    <!-- <h2>Welcome to Mind Lift</h2> -->
+    <h1>
+        <span class="highlight-primary">Stay Sharp</span>,
+        <span class="highlight-secondary">Move Smart</span> – 
+        <span class="highlight-accent">Empowering Seniors, Mind and Body</span>.
+    </h1>
+
+<!-- Card Container for Game Links -->
+<div class="card-container">
+    <!-- ROW 1 -->
+    <h2 class="row-header">Classic Arcade Games</h2>
+    <div class="row">
+      <div class="card1" onclick="window.location.href='games/snake/snake.html';">
+        <img src="assets/rattlesnake.png" alt="Snake" class="card-img">
+        <div class="card1-info">
+          <h2>Snake</h2>
+          <p>Navigate the grid, eat to grow, and avoid crashing—how long can you survive?</p>
+        </div>
+      </div>
+      <div class="card2" onclick="window.location.href='games/spaceInvaders/spaceInvaders.html';">
+        <img src="assets/rocketIcon.png" alt="Space Invaders" class="card-img">
+        <div class="card2-info">
+          <h2>Space Invaders</h2>
+          <p>Defend Earth from an alien invasion—dodge, shoot, and survive in the iconic battle.</p>
+        </div>
+      </div>
+      <div class="card3" onclick="window.location.href='games/tracing/tracing.html';">
+        <img src="assets/pacman.png" alt="Pacman" class="card-img">
+        <div class="card3-info">
+            <h2>Pacman</h2>
+            <p>Chomp your way through the maze, dodge ghosts, and grab power-ups.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- ROW 2 -->
+    <h2 class="row-header">Mental Exercises</h2>
+    <div class="row">
+      <div class="card4" onclick="window.location.href='games/snake/snake.html';">
+        <img src="assets/pencil.png" alt="Trace that Shape" class="card-img">
+        <div class="card4-info">
+          <h2>Trace that Shape</h2>
+          <p>Steady your hand and sharpen your focus—trace the shape before time runs out!</p>
+        </div>
+      </div>
+      <div class="card5" onclick="window.location.href='games/tracing/tracing.html';">
+        <img src="assets/paint.png" alt="Sort the Objects" class="card-img">
+        <div class="card5-info">
+            <h2>Sort the Objects</h2>
+          <p>Test your speed and focus by sorting objects by color—can you beat the clock?</p>
+        </div>
+      </div>
+      <div class="card6" onclick="window.location.href='games/tracing/tracing.html';">
+        <img src="assets/magnifier.png" alt="Odd One Out" class="card-img">
+        <div class="card6-info">
+          <h2>Odd One Out</h2>
+          <p>Test your observation skills and speed by finding the shape that doesn't belong.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <script type="module" src="gestureControl.js"></script>
+
+
 
 </body>
 </html>
-

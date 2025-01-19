@@ -1,22 +1,45 @@
-canvas {
-    box-shadow: black 20px 10px 50px;
-}
-h1 {
-    margin: 0px;
-    margin-bottom: 10px;
-    font-size: 2.9em;
-    font-family: "Helvetica";
-}
 body {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    padding: 0px;
-    margin: 0px;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    background: linear-gradient(
-        0deg,
-        rgb(97, 98, 99) 0%,
-        rgba(0, 0, 0, 0) 100%
-    );
+    margin: 0;
+    background-color: #4964fe;
+    color: white;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  }
+
+canvas {
+    box-shadow: #4964fe 20px 10px 50px;
 }
+h1 {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 50px;
+  font-weight: 200;
+  color:#1a2c60;
+  margin-bottom: 20px;
+}
+
+canvas {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 30px;
+  background-color: #1a2c60;
+  color: #8498ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button-container {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+

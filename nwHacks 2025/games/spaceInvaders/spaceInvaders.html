@@ -5,21 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Space Invaders</title>
   <link rel="stylesheet" href="spaceInvaders.css">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
 
 </head>
 <body>
   <header>
     <h1>Space Invaders</h1>
-    <nav>
-      <ul>
-        <li><a href="../../index.html">Back to Home</a></li>
-      </ul>
-    </nav>
   </header>
 
   <canvas id="game"></canvas>
-  
-
+  <video id="webcam" autoplay style="display: none;"></video>
+  <script type="module" src="gestureControl.js"></script>
+  <script type="module">
+    import mediapipetasksVision from 'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.20/+esm'
+    </script>
+    
   <script type="module" src="spaceInvaders.js"></script>
+  <div class="home-button-container">
+    <button onclick="location.href='../../index.html';">Home</button>
+</div>
+
 </body>
 </html>

@@ -1,14 +1,41 @@
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   margin: 0;
-  background-color: #000;
+  background-color: #6c1e3e;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+h1 {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 50px;
+  font-weight: 200;
+  color:#bfa3ab;
+  margin-bottom: 20px;
 }
 
 canvas {
-  border: 1px solid white;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 30px;
+  background-color: #bfa3ab;
+  color: #6c1e3e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button-container {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
