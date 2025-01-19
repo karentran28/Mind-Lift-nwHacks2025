@@ -3,25 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracing</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Keep the Line</title>
+  <link rel="stylesheet" href="tracing.css">
 </head>
 <body>
-  <header>
-    <h1>Tracing</h1>
-    <nav>
-      <ul>
-        <li><a href="../../index.html">Back to Home</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="game-container">
-    <h2>Welcome to Game 1!</h2>
-    <button id="startGame">Start Game</button>
-    <!-- Add your game elements (e.g., canvas, game content) here -->
-  </section>
-
-  <script src="script.js"></script>
+  <h1>Keep the Lines!</h1>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <div id="controls">
+    <button id="resetButton">Reset</button>
+    <button id="submitButton">Submit</button>
+  </div>
+  <p id="score">Score: 0</p>
+  <script src="tracing.js"></script>
 </body>
 </html>
