@@ -22,6 +22,15 @@ h1 {
   margin-bottom: 20px;
 }
 
+
+p {
+  margin-top: 0px;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 200;
+  color:#1a2c60;
+}
+
 canvas {
   margin-bottom: 20px;
 }

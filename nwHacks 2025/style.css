@@ -2,60 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-#splash-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ffff;
-    position: absolute;
-    width: 100%;
-    flex-direction: column; /* Stack the logo and text vertically */
+body {
+    background-image: url(./assets/background/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #logo2 {
     width: 50px 
 }
 
-#logo {
-    width: 200px; 
-    opacity: 0; 
-    visibility: hidden; 
-    transition: opacity 1s ease, visibility 1s ease; 
-    margin-bottom: 20px; /* Add gap between the logo and text */
-}
-
-#logo-text {
-    font-family: "Lato", sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-    opacity: 0; 
-    visibility: hidden; 
-    transition: opacity 1s ease, visibility 1s ease;
-}
-
-#logo.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-#logo-text.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
 #home-page {
     text-align: center;
     padding: 20px;
-    display: none; /* Hidden initially */
-}
-
-.hidden {
-    display: none;
 }
 
 .card-container {
@@ -365,7 +328,7 @@ h1 {
 
 /* Individual Span Styling */
 .highlight-primary {
-    background: linear-gradient(90deg, #e33c82, #a60045, #e33c82);
+    background: linear-gradient(90deg, #e33b81, #a60045, #e33c82);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -380,9 +343,11 @@ h1 {
     color: black; /* Teal */
 }
 
-h2 {
+#header {
     font-weight: lighter;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 50px;
+    padding-left: 100px;
+    text-align: justify;
 }
 

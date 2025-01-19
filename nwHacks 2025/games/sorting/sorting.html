@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Game</title>
+    <link rel="stylesheet" href="sorting.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+</head>
+<body>
+    <h1>Sorting Game</h1>
+    <p>Use the left and right arrow keys to sort blocks into the correct bin. Or raise your left and right hand to sort.</p>
+    <video id="webcam" autoplay style="display: none;"></video>
+    <div id="game-container">
+        <div id="left-bin" class="bin">RED Bin</div>
+        <div id="block-container"></div>
+        <div id="right-bin" class="bin">BLUE Bin</div>
+    </div>
+    <div id="score-container">Score: 0</div>
+    <script src="sorting.js"></script>
+    <div class="home-button-container">
+        <button onclick="location.href='../../index.html';">Home</button>
+    </div>
+    <script type="module" src="gestureControl.js"></script> 
+    <script type="module">
+        import mediapipetasksVision from 'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.20/+esm'
+    </script>
+</body>
+</html>

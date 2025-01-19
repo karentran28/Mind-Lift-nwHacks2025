@@ -1,10 +1,8 @@
-// Ensure video element exists
 const videoElement = document.getElementById("webcam");
 if (!videoElement) {
   console.error("Video element not found");
 }
 
-// Initialize MediaPipe Hands
 const hands = new Hands({
   locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`,
 });
@@ -16,7 +14,6 @@ hands.setOptions({
   minTrackingConfidence: 0.5,
 });
 
-// Initialize Webcam with error handling
 navigator.mediaDevices
   .getUserMedia({ video: true })
   .then((stream) => {
@@ -40,8 +37,7 @@ navigator.mediaDevices
     console.error("Error accessing the camera: ", error);
   });
 
-// Gesture Control
-hands.onResults((results) => {
+  hands.onResults((results) => {
   if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
     const landmarks = results.multiHandLandmarks[0];
     const wrist = landmarks[0];
