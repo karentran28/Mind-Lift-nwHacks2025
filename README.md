@@ -1,3 +1,6 @@
+# MIND LIFT
+![Untitled](https://github.com/user-attachments/assets/f4eafaaf-48b3-49bd-9d79-790ed6160735)
+
 ## Inspiration
 Our inspiration came from a desire to make technology more engaging and accessible for seniors. We wanted to create something that could not only entertain but also help improve their coordination and provide mental stimulation. By incorporating gesture-based controls into classic games, we aimed to offer a platform that feels natural and intuitive, while also promoting cognitive and physical engagement in a fun and enjoyable way.
 
